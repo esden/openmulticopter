@@ -14,4 +14,14 @@ If you want to be notified about commits to the repositories subscribe to the
 openmulticopter-commits mailinglist:
 http://openmulticopter.org/cgi-bin/mailman/listinfo/openmulticopter-commits
 
-We also have an IRC channel on freenode.net: #openmulticopter
+We also have an IRC channel (#openmulticopter on freenode.net).
+
+References
+----------
+This project is based on the awesome effort made in the paparazzi project
+creating the booz platform.
+
+Original software:
+http://svn.savannah.gnu.org/viewvc/paparazzi3/trunk/sw/airborne/booz/?root=paparazzi
+Original hardware:
+http://svn.savannah.gnu.org/viewvc/paparazzi4/trunk/hw/booz/?root=paparazzi
