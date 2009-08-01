@@ -1,5 +1,5 @@
 # release: pcb 1.99y
-# date:    Sun Aug  2 01:06:37 2009
+# date:    Sun Aug  2 01:10:53 2009
 # user:    uwe (,,,)
 # host:    greenwood.local.domain
 
@@ -15,7 +15,7 @@ Thermal[0.500000]
 DRC[1000 1000 1000 1000 1500 1000]
 Flags("nameonpcb,uniquename,clearnew,snappin")
 Groups("1,c:2,s:3:4:5:6:7:8")
-Styles["Signal,39370,12213,11811,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
+Styles["Signal,39370,39770,39370,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
 Symbol(' ' 18)
 (
@@ -797,6 +797,10 @@ Symbol('~' 12)
 	SymbolLine(15 35 20 35 8)
 	SymbolLine(20 35 25 30 8)
 )
+Via[27559 27559 12213 2000 0 11811 "" ""]
+Via[366142 27559 12213 2000 0 11811 "" ""]
+Via[366142 366142 12213 2000 0 11811 "" ""]
+Via[27559 366142 12213 2000 0 11811 "" ""]
 Layer(1 "component")
 (
 )
