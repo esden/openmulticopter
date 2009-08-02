@@ -1,0 +1,140 @@
+##
+## Open-BLDC - Open BrushLess DC Motor Controller
+## Copyright (C) 2009 Uwe Hermann <uwe@hermann-uwe.de>
+##
+## This program is free software; you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation; either version 3 of the License, or
+## (at your option) any later version.
+##
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with this program.  If not, see <http://www.gnu.org/licenses/>.
+##
+
+# Template file for creating symbols with tragesym.
+
+[options]
+wordswap=yes
+rotate_labels=no
+sort_labels=no
+generate_pinseq=yes
+sym_width=5200
+pinwidthvertical=400
+pinwidthhorizontal=400
+
+[geda_attr]
+version=20060113 1
+name=STM32F103Rx
+device=STM32F103Rx
+refdes=IC?
+footprint=LQFP64
+description=STM32F103R[CDE] microcontroller
+documentation=http://www.st.com/stonline/products/literature/ds/13587.pdf
+author=Uwe Hermann <uwe@hermann-uwe.de>
+dist-license=GPL
+use-license=unlimited
+numslots=0
+#slot=1
+#slotdef=1:
+#comment=
+
+[pins]
+#pinnr	seq	type	style	posit.	net	label	
+1		pwr	line	l		VBAT
+2		io	line	l		PC13-TAMPER-RTC
+3		io	line	l		PC14-OSC32_IN
+4		io	line	l		PC15-OSC32_OUT
+5		io	line	l		PD0-OSC_IN
+6		io	line	l		PD1-OSC_OUT
+7		io	dot	l		NRST
+12		pwr	line	l		VSSA
+13		pwr	line	l		VDDA
+
+			spacer	l
+
+14		io	line	l		PA0-WKUP/USART2CTS/ADC0/TIM2CH2
+15		io	line	l		PA1-USART2RTS/ADC1/TIM2CH2
+16		io	line	l		PA2-USART2TX/ADC2/TIM2CH3
+17		io	line	l		PA3-USART2RX/ADC3/TIM2CH4
+20		io	line	l		PA4-SPI1NSS/ADC4/USART2CK
+21		io	line	l		PA5-SPI1SCK/ADC5
+22		io	line	l		PA6-SPI1MISO/ADC6/TIM3CH1
+23		io	line	l		PA7-SPI1MOSI/ADC7/TIM3CH2
+
+			spacer	l
+
+41		io	line	l		PA8-USART1CK/MCO
+42		io	line	l		PA9-USART1TX
+43		io	line	l		PA10-USART1RX
+44		io	line	l		PA11-USART1CTS
+45		io	line	l		PA12-USART1RTS
+46		io	line	l		PA13/JTMS/SWDIO
+49		io	line	l		PA14/JTCK/SWCLK
+50		io	line	l		PA15/JTDI-TIM2CH1ETR/SPI1NSS
+
+			spacer	l
+
+8		io	line	l		PC0-ADC10
+9		io	line	l		PC1-ADC11
+10		io	line	l		PC2-ADC12
+11		io	line	l		PC3-ADC13
+24		io	line	l		PC4-ADC14
+25		io	line	l		PC5-ADC15
+37		io	line	l		PC6-TIM3CH1
+38		io	line	l		PC7-TIM3CH2
+
+			spacer	l
+
+26		io	line	r		PB0-ADC8/TIM3CH3
+27		io	line	r		PB1-ADC9/TIM3CH4
+28		io	line	r		PB2/BOOT1
+55		io	line	r		PB3/JTDO-TIM2CH2/SPI1SCK
+56		io	line	r		PB4/JNTRST-TIM3CH1/SPI1MISO
+57		io	line	r		PB5-I2C1SMBAI-TIM3CH2/SPI1MOSI
+58		io	line	r		PB6-I2C1SCL/TIM4CH1-USART1TX
+59		io	line	r		PB7-I2C1SDA/TIM4CH2-USART1RX
+
+			spacer	r
+
+60		io	line	r		BOOT0
+
+			spacer	r
+
+19		pwr	line	r		VDD_4
+64		pwr	line	r		VDD_3
+48		pwr	line	r		VDD_2
+32		pwr	line	r		VDD_1
+31		pwr	line	r		VSS_1
+47		pwr	line	r		VSS_2
+63		pwr	line	r		VSS_3
+18		pwr	line	r		VSS_4
+
+			spacer	r
+			spacer	r
+
+61		io	line	r		PB8-TIM4CH3-I2C1SCL
+62		io	line	r		PB9-TIM4CH4-I2C1SDA
+29		io	line	r		PB10-I2C2SCL/USART3TX
+30		io	line	r		PB11-I2C2SDA/USART3RX
+33		io	line	r		PB12-SPI2NSS/I2C2SMBAI/USART3CK
+34		io	line	r		PB13-SPI2SCK/USART3CTS
+35		io	line	r		PB14-SPI2MISO/USART3RTS
+36		io	line	r		PB15-SPI2MOSI
+
+			spacer	r
+
+39		io	line	r		PC8-TIM3CH3
+40		io	line	r		PC9-TIM3CH4
+51		io	line	r		PC10-USART3TX
+52		io	line	r		PC11-USART3RX
+53		io	line	r		PC12-USART3CK
+
+			spacer	r
+
+54		io	line	r		PD2-TIM3ETR
+
