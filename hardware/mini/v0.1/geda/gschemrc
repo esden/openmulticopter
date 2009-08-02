@@ -30,3 +30,5 @@
 (output-color "enabled") ; for color PS output
 (image-color "enabled")  ; for color PNG output
 
+;; vim:ft=scheme
+

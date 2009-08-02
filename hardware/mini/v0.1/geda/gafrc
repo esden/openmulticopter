@@ -22,3 +22,5 @@
 ;; Load additional symbols from the ''symbols' sub-directory.
 (component-library "${PWD}/../../../lib/geda/symbols")
 
+;; vim:ft=scheme
+
