@@ -1,5 +1,5 @@
 # release: pcb 1.99y
-# date:    Sun Aug  2 21:55:26 2009
+# date:    Sun Aug  2 22:31:28 2009
 # user:    esdentem (Piotr Esden-Tempski,,,)
 # host:    atradig141.informatik.tu-muenchen.de
 
@@ -8,7 +8,7 @@ FileVersion[20070407]
 
 PCB["" 196850 196850]
 
-Grid[10000.000000 0 0 1]
+Grid[800.000000 0 0 1]
 Cursor[0 0 0.000000]
 PolyArea[200000000.000000]
 Thermal[0.500000]
