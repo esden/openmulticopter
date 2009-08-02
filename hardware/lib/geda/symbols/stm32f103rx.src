@@ -1,6 +1,7 @@
 ##
-## Open-BLDC - Open BrushLess DC Motor Controller
+## openmulticopter - 100% Free Software and Open Hardware multicopter project
 ## Copyright (C) 2009 Uwe Hermann <uwe@hermann-uwe.de>
+## Copyright (C) 2009 Piotr Esden-Tempski <piotr@esden.net>
 ##
 ## This program is free software; you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published by
@@ -31,10 +32,10 @@ name=STM32F103Rx
 device=STM32F103Rx
 refdes=IC?
 footprint=LQFP64
-description=STM32F103R[CDE] microcontroller
+description=STM32F103R{CDE} microcontroller
 documentation=http://www.st.com/stonline/products/literature/ds/13587.pdf
 author=Uwe Hermann <uwe@hermann-uwe.de>
-dist-license=GPL
+dist-license=GPL (version 3 or later)
 use-license=unlimited
 numslots=0
 #slot=1
