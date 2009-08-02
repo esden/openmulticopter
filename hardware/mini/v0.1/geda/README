@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+README
+-------------------------------------------------------------------------------
+
+This is an effort to implement the openmulticopter hardware descriptions
+(schematics and PCB layouts) using the open-source tools gEDA/pcb.
+
