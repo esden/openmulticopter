@@ -26,3 +26,7 @@
 ;; Use light background for schematics printing (PS / PDF).
 (load (string-append geda-rc-path "/print-colormap-lightbg"))
 
+;; Enable color output.
+(output-color "enabled") ; for color PS output
+(image-color "enabled")  ; for color PNG output
+
