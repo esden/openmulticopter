@@ -1,5 +1,5 @@
 # release: pcb 1.99y
-# date:    Sun Aug  2 02:21:03 2009
+# date:    Sun Aug  2 02:23:57 2009
 # user:    uwe (,,,)
 # host:    greenwood.local.domain
 
@@ -852,4 +852,7 @@ Layer(9 "silk")
 )
 Layer(10 "silk")
 (
+	Text[149606 370079 0 232 "openmulticopter" ""]
+	Text[366142 248031 1 232 "openmulticopter" ""]
+	Text[31496 145669 3 232 "openmulticopter" ""]
 )
