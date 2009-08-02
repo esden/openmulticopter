@@ -1,0 +1,64 @@
+##
+## openmulticopter - 100% Free Software and Open Hardware multicopter project
+## Copyright (C) 2009 Uwe Hermann <uwe@hermann-uwe.de>
+##
+## This program is free software; you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation; either version 3 of the License, or
+## (at your option) any later version.
+##
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with this program.  If not, see <http://www.gnu.org/licenses/>.
+##
+
+[options]
+wordswap=yes
+rotate_labels=no
+sort_labels=no
+generate_pinseq=yes
+sym_width=1600
+pinwidthvertical=400
+pinwidthhorizontal=400
+
+[geda_attr]
+version=20060113 1
+name=ADXL335
+device=ADXL335
+refdes=IC?
+footprint=LFCSP_LQ
+description=Small, Low Power, 3-Axis +/-3g Accelerometer
+documentation=http://www.analog.com/static/imported-files/data_sheets/ADXL335.pdf
+author=Uwe Hermann <uwe@hermann-uwe.de>
+dist-license=GPL (version 3 or later)
+use-license=unlimited
+numslots=0
+#slot=1
+#slotdef=1:
+#comment=
+
+[pins]
+#pinnr	seq	type	style	posit.	net	label
+2		io	line	l		ST
+8		io	line	l		Z_OUT
+10		io	line	l		Y_OUT
+12		io	line	l		X_OUT
+14		pwr	line	l		VSS
+15		pwr	line	l		VSS
+3		pwr	line	l		GND
+5		pwr	line	l		GND
+
+16		pas	line	r		NC
+13		pas	line	r		NC
+11		pas	line	r		NC
+9		pas	line	r		NC
+4		pas	line	r		NC
+1		pas	line	r		NC
+6		pwr	line	r		GND
+7		pwr	line	r		GND
+EP		pas	line	r		EXPOSED_PAD
+

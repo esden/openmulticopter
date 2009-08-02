@@ -19,7 +19,8 @@
 
 GENERATED_SYMBOLS = \
 	mcp2551.sym \
-	stm32f103rx.sym
+	stm32f103rx.sym \
+	adxl335.sym
 
 all: $(GENERATED_SYMBOLS)
 
