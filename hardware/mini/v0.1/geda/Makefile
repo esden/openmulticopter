@@ -27,7 +27,7 @@ SCHEMEDIR = $(GEDADIR)/share/gEDA/scheme
 all: symbols sch-ps sch-pdf
 
 symbols:
-	$(MAKE) -C symbols
+	$(MAKE) -C ../../../lib/geda/symbols
 
 sch-ps:
 	@# This must be done in an X11 session, doesn't work on console.
