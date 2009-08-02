@@ -17,8 +17,6 @@
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ##
 
-# Template file for creating symbols with tragesym.
-
 [options]
 wordswap=yes
 rotate_labels=no
@@ -45,7 +43,7 @@ numslots=0
 #comment=
 
 [pins]
-#pinnr	seq	type	style	posit.	net	label	
+#pinnr	seq	type	style	posit.	net	label
 1		in	line	l		TXD
 2		pwr	line	l		VSS
 3		pwr	line	l		VDD
