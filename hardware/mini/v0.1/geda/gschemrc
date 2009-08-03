@@ -17,6 +17,8 @@
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;;
 
+;; This is the config file for gschem.
+
 ;; Force use of A4 paper size for exported PS/PDF schematics.
 (paper-size 11.69 8.27) ; A4
 
@@ -29,6 +31,9 @@
 ;; Enable color output.
 (output-color "enabled") ; for color PS output
 (image-color "enabled")  ; for color PNG output
+
+;; Don't open annoying log window per default (use Options/Show Log Window).
+(log-window "later")
 
 ;; vim:ft=scheme
 
