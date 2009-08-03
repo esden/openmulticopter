@@ -1,0 +1,97 @@
+##
+## openmulticopter - 100% Free Software and Open Hardware multicopter project
+## Copyright (C) 2009 Uwe Hermann <uwe@hermann-uwe.de>
+##
+## This program is free software; you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation; either version 3 of the License, or
+## (at your option) any later version.
+##
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with this program.  If not, see <http://www.gnu.org/licenses/>.
+##
+
+[options]
+wordswap=yes
+rotate_labels=no
+sort_labels=no
+generate_pinseq=yes
+sym_width=2000
+pinwidthvertical=400
+pinwidthhorizontal=400
+
+[geda_attr]
+version=20060113 1
+name=MLX90609
+device=MLX90609
+refdes=IC?
+footprint=TODO
+description=TODO
+documentation=TODO
+author=Uwe Hermann <uwe@hermann-uwe.de>
+dist-license=GPL (version 3 or later)
+use-license=unlimited
+numslots=0
+#slot=1
+#slotdef=1:
+#comment=
+
+[pins]
+#pinnr	seq	type	style	posit.	net	label
+3		pwr	line	l		VSS
+4		pwr	line	l		VDD
+27		pwr	line	l		VDDA
+26		pwr	line	l		VSSA
+
+			spacer	l
+
+6		io	clk	l		SCLK
+8		io	line	l		MISO
+9		io	line	l		MOSI
+7		io	dot	l		\_SS\_
+
+			spacer	l
+
+10		io	line	l		TEST
+29		in	line	l		TESTIN
+30		out	line	l		TESTOUT
+
+			spacer	l
+
+2		pas	line	l		NC
+5		pas	line	l		NC
+13		pas	line	l		NC
+14		pas	line	l		NC
+15		pas	line	l		NC
+
+12		io	line	r		SELFTEST
+11		io	line	r		ERROR
+
+			spacer	r
+
+24		out	line	r		OUTAR
+22		out	line	r		OUTTEMP
+
+			spacer	r
+
+25		pwr	line	r		VREF
+21		in	line	r		HVIN
+23		io	line	r		FLT
+1		io	line	r		TOPCAP
+32		io	line	r		TOPCAP	# TODO?
+28		io	line	r		CASE
+
+			spacer	r
+
+16		pas	line	r		NC
+17		pas	line	r		NC
+18		pas	line	r		NC
+19		pas	line	r		NC
+20		pas	line	r		NC
+31		pas	line	r		NC
+
