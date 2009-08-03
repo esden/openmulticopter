@@ -1,6 +1,7 @@
 ##
 ## openmulticopter - 100% Free Software and Open Hardware multicopter project
 ## Copyright (C) 2009 Uwe Hermann <uwe@hermann-uwe.de>
+## Copyright (C) 2009 Piotr Esden-Tempski <piotr@esden.net>
 ##
 ## This program is free software; you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published by
@@ -16,11 +17,16 @@
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ##
 
-all:
-	$(MAKE) -C generated
+GENERATED_SYMBOLS = \
+	mcp2551.sym \
+	stm32f103rx.sym \
+	adxl335.sym
+
+all: $(GENERATED_SYMBOLS)
+
+%.sym: %.src
+	@tragesym $< $@
 
 clean:
-	$(MAKE) -C generated clean
-
-.PHONY: generated
+	@rm -f $(GENERATED_SYMBOLS)
 

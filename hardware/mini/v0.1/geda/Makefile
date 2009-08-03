@@ -52,9 +52,9 @@ drc: $(SCH).sch
 	@# gnetlist -g drc2 -o - $(SCH).sch -O ignore-warnings-in-return-value
 
 bom:
-	gnetlist -g partslist3 -o $(SCH).bom $(SCH).sch 
+	gnetlist -g partslist3 -o $(SCH).bom $(SCH).sch
 	@# The below 'bom2' also needs an 'attribs' file as input.
-	@# gnetlist -g bom2 -o $(SCH).bom $(SCH).sch 
+	@# gnetlist -g bom2 -o $(SCH).bom $(SCH).sch
 
 clean:
 	$(MAKE) -C ../../../lib/geda/symbols clean
