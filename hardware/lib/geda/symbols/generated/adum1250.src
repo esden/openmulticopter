@@ -17,18 +17,39 @@
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ##
 
-GENERATED_SYMBOLS = \
-	mcp2551.sym \
-	stm32f103rx.sym \
-	adxl335.sym \
-	mlx90609.sym \
-	adum1250.sym
+[options]
+wordswap=yes
+rotate_labels=no
+sort_labels=no
+generate_pinseq=yes
+sym_width=1300
+pinwidthvertical=400
+pinwidthhorizontal=400
 
-all: $(GENERATED_SYMBOLS)
+[geda_attr]
+version=20060113 1
+name=ADuM1250
+device=ADuM1250
+refdes=IC?
+footprint=SO8
+description=Hot Swappable Dual I2C Isolators
+documentation=http://www.analog.com/static/imported-files/data_sheets/ADUM1250_1251.pdf
+author=Piotr Esden-Tempski <piotr@esden.net>
+dist-license=GPL (version 3 or later)
+use-license=unlimited
+numslots=0
+#slot=1
+#slotdef=1:
+#comment=
 
-%.sym: %.src
-	@tragesym $< $@
-
-clean:
-	@rm -f $(GENERATED_SYMBOLS)
+[pins]
+#pinnr	seq	type	style	posit.	net	label
+1		pwr	line	l		VDD1
+2		io	line	l		SDA1
+3		io	line	l		SCL1
+4		pwr	line	l		GND1
+8		pwr	line	r		VDD2
+7		io	line	r		SDA2
+6		io	line	r		SCL2
+5		pwr	line	r		GND2
 
