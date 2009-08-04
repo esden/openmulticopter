@@ -21,7 +21,7 @@ wordswap=yes
 rotate_labels=no
 sort_labels=no
 generate_pinseq=yes
-sym_width=2000
+sym_width=2800
 pinwidthvertical=400
 pinwidthhorizontal=400
 
@@ -48,36 +48,34 @@ numslots=0
 27		pwr	line	l		VDDA
 26		pwr	line	l		VSSA
 
-			spacer	l
+#			spacer	l
 
 6		io	clk	l		SCLK
 8		io	line	l		MISO
 9		io	line	l		MOSI
 7		io	dot	l		\_SS\_
 
-			spacer	l
+#			spacer	l
 
 10		io	line	l		TEST
 29		in	line	l		TESTIN
 30		out	line	l		TESTOUT
 
-			spacer	l
-
-2		pas	line	l		NC
-5		pas	line	l		NC
-13		pas	line	l		NC
-14		pas	line	l		NC
-15		pas	line	l		NC
+2		pas	line	t		NC
+5		pas	line	t		NC
+13		pas	line	t		NC
+14		pas	line	t		NC
+15		pas	line	t		NC
 
 12		io	line	r		SELFTEST
 11		io	line	r		ERROR
 
-			spacer	r
+#			spacer	r
 
 24		out	line	r		OUTAR
 22		out	line	r		OUTTEMP
 
-			spacer	r
+#			spacer	r
 
 25		pwr	line	r		VREF
 21		in	line	r		HVIN
@@ -86,12 +84,10 @@ numslots=0
 32		io	line	r		TOPCAP	# TODO?
 28		io	line	r		CASE
 
-			spacer	r
-
-16		pas	line	r		NC
-17		pas	line	r		NC
-18		pas	line	r		NC
-19		pas	line	r		NC
-20		pas	line	r		NC
-31		pas	line	r		NC
+16		pas	line	b		NC
+17		pas	line	b		NC
+18		pas	line	b		NC
+19		pas	line	b		NC
+20		pas	line	b		NC
+31		pas	line	b		NC
 
