@@ -27,7 +27,7 @@ pcb-ps:
 	pcb -x ps --psfile $(BOARD).ps $(BOARD).pcb
 
 pcb-png:
-	pcb -x png --dpi 300 --only-visible --outfile $(BOARD).png $(BOARD).pcb
+	pcb -x png --dpi 300 --outfile $(BOARD).png $(BOARD).pcb
 
 clean:
 	@rm -f $(BOARD).pcb- $(BOARD).*.gbr $(BOARD).*.cnc $(BOARD).ps $(BOARD).png
