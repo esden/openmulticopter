@@ -36,5 +36,6 @@ pcb-photo-png:
 	    --photo-flip-x --outfile $(BOARD)_bottom.png $(BOARD).pcb
 
 clean:
-	@rm -f $(BOARD).pcb- $(BOARD).*.gbr $(BOARD).*.cnc $(BOARD).ps $(BOARD).png
+	@rm -f $(BOARD).pcb- $(BOARD).*.gbr $(BOARD).*.cnc
+	@rm -f $(BOARD).ps $(BOARD).png $(BOARD)_top.png $(BOARD)_bottom.png
 
