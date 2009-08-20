@@ -18,7 +18,7 @@
 
 BOARD = centerplates
 
-all: pcb-gerber pcb-ps pcb-png
+all: pcb-gerber pcb-ps pcb-png pcb-photo-png
 
 pcb-gerber:
 	pcb -x gerber --gerberfile $(BOARD) $(BOARD).pcb
@@ -28,6 +28,12 @@ pcb-ps:
 
 pcb-png:
 	pcb -x png --dpi 300 --outfile $(BOARD).png $(BOARD).pcb
+
+pcb-photo-png:
+	pcb -x png --dpi 300 --photo-mode \
+	    --outfile $(BOARD)_top.png $(BOARD).pcb
+	pcb -x png --dpi 300 --photo-mode \
+	    --photo-flip-x --outfile $(BOARD)_bottom.png $(BOARD).pcb
 
 clean:
 	@rm -f $(BOARD).pcb- $(BOARD).*.gbr $(BOARD).*.cnc $(BOARD).ps $(BOARD).png
