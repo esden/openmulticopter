@@ -17,19 +17,35 @@
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ##
 
-GENERATED_SYMBOLS = \
-	mcp2551.sym \
-	stm32f103rx.sym \
-	adxl335.sym \
-	mlx90609.sym \
-	adum1250.sym \
-	ase.sym
+[options]
+wordswap=yes
+rotate_labels=no
+sort_labels=no
+generate_pinseq=yes
+sym_width=1300
+pinwidthvertical=400
+pinwidthhorizontal=400
 
-all: $(GENERATED_SYMBOLS)
+[geda_attr]
+version=20060113 1
+name=ASE
+device=ASE
+refdes=IC?
+footprint=ASE
+description=ASE series 3.3V CMOS SMD crystal clock oszillator
+documentation=http://www.abracon.com/Oscillators/ASEseries.pdf
+author=Piotr Esden-Tempski <piotr@esden.net>
+dist-license=GPL (version 3 or later)
+use-license=unlimited
+numslots=0
+#slot=1
+#slotdef=1:
+#comment=
 
-%.sym: %.src
-	@tragesym $< $@
-
-clean:
-	@rm -f $(GENERATED_SYMBOLS)
+[pins]
+#pinnr	seq	type	style	posit.	net	label
+4		pwr	line	l		VDD
+2		pwr	line	l		GND
+1		io	line	r		TRI
+3		io	line	r		OUT
 
