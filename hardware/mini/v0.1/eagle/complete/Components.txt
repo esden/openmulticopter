@@ -1,0 +1,3 @@
+Components from Distrelec (Distributor)
+
+Cout 100uF:	800715
