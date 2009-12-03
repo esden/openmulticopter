@@ -1,5 +1,6 @@
 Components from Distrelec (Distributor)
 
+== Power Supply ==
 Cout 100uF:	800715
 
 Tantalersatz: https://www.distrelec.ch/ishopWebFront/catalog/product.do/para/keywords/is/Chip-Kondensatoren_für_Tantal_Ersatz/and/language/is/de/and/shop/is/CH/and/series/is/1/and/id/is/01/and/node/is/DC-91604.html
@@ -8,3 +9,8 @@ Tantalersatz: https://www.distrelec.ch/ishopWebFront/catalog/product.do/para/key
 22uF	1210	823521
 10uF	0805	823511
 10uF	1206	823513
+
+== Gyros ==
+
+1uF     0603    823495
+1uF     SMC_A   812091
