@@ -10,8 +10,8 @@ Cout 100uF:	800715
 22uH    2220    351481
 
 = AVCC =
-100uH    1210   490-4065-1-ND (Digikey)
-47uF    SMC_B   812126
+100uH   1210    490-4065-1-ND (Digikey)
+22uF    SMC_B   812126
 
 = AVDD =
 100uH   0805    445-3617-1-ND (Digikey)
