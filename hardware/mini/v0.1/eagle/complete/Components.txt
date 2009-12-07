@@ -9,11 +9,13 @@ Cout 100uF:	800715
 10uF	1206	823513
 22uH    2220    351481
 
-= AVCC / AVDD =
-47uH    0805    587-1634-1-ND (Digikey)
-47uF    SMC_B   812128
+= AVCC =
+100uH    1210   490-4065-1-ND (Digikey)
+47uF    SMC_B   812126
+
+= AVDD =
 100uH   0805    445-3617-1-ND (Digikey)
-10uF    SMC_A   812083
+22uF    SMC_A   812085
 
 == Gyros ==
 
