@@ -9,6 +9,9 @@ Cout 100uF:	800715
 10uF	1206	823513
 22uH    2220    351481
 
+= Battery (Z-Diode) =
+3.6V    SOT23   600733
+
 = AVCC =
 100uH   1210    490-4065-1-ND (Digikey)
 22uF    SMC_B   812126
