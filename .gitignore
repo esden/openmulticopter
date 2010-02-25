@@ -2,4 +2,6 @@ log/*.log
 tmp/**/*
 .DS_Store
 *.epf
+*.mpd
+*.pov
 *~
