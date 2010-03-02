@@ -5,3 +5,7 @@ tmp/**/*
 *.mpd
 *.pov
 *~
+*.aux
+*.log
+*.pdf
+*.toc
