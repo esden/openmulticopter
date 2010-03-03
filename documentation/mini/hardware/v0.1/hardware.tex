@@ -1,0 +1,79 @@
+%          File: /documentation/mini/v0.1/hardware/hardware.tex
+%       Created: Tue Mar 02 03:00 PM 2010 C
+%   Last Change: Tue Mar 02 03:00 PM 2010 C
+%
+%   Copyright (c) by . All rights reserved.
+%
+
+% Use for english
+\documentclass[11pt, a4paper]{article}
+
+\usepackage{a4wide}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage[utf8]{inputenc}
+
+% Header / Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\headheight 25pt
+
+\lhead{openmulticopter - mini}
+\chead{}
+\rhead{hardware}
+\lfoot{openmulticopter.org}
+\cfoot{ }
+\rfoot{Page \thepage}
+
+% Document information
+\title{openmulticopter mini - hardware v0.1}
+\author{}
+\date{\today}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% Additional symbols
+\usepackage{textcomp}
+
+% Color package
+\usepackage{color}
+
+% Math package
+\usepackage{amsmath}
+
+% Graphics support
+\usepackage{graphics}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+%===================Start document====================
+
+\begin{document}
+
+% Display title etc
+\maketitle
+
+\begin{abstract}
+Abstract
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+
+\section{Summary} % (fold)
+\label{sec:Summary}
+The mini version of the openmulticopter is a first version of our project. It’s only for boot strapping our work and for testing/development purposes. As simple as possible. And of course, as small as possible.
+% section Summary (end)
+\end{document}
+
