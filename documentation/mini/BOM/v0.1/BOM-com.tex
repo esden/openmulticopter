@@ -1,0 +1,197 @@
+%          File: Desktop/BOM-com.tex
+%       Created: Sat Apr 03 01:00 PM 2010 C
+%   Last Change: Sat Apr 03 01:00 PM 2010 C
+%
+%   Copyright (c) by . All rights reserved.
+%
+
+% Use for german
+%\documentclass[11pt, a4paper]{scrartcl}
+%\usepackage[ngerman]{babel}
+
+% Use for english
+\documentclass[11pt, a4paper]{article}[2009/11/13]
+
+\usepackage{a4wide}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage[utf8]{inputenc}
+
+% Header / Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\headheight 25pt
+
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+% Document information
+\title{document title}
+\author{Jonas Schild}
+\date{\today}
+
+% Surround parts of graphics with box
+\usepackage{boxedminipage}
+
+% Package for including code in the document
+\usepackage{listings}
+
+% Additional symbols
+\usepackage{textcomp}
+
+% Color package
+\usepackage{color}
+
+% Math package
+\usepackage{amsmath}
+
+% Graphics support
+\usepackage{graphics}
+
+% This is now the recommended way for checking for PDFLaTeX:
+\usepackage{ifpdf}
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
+%===================Start document====================
+
+\begin{document}
+
+% Display title etc
+\maketitle
+
+\newpage
+
+Bauteil Wert          Device            Package               Description                                                               
+BATT+                 3,17/1,1          3,17/1,1              THROUGH-HOLE PAD                                                          
+BATT-                 3,17/1,1          3,17/1,1              THROUGH-HOLE PAD                                                          
+C1      100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C2      330uF         CPOL-EUE3.5-8     E3,5-8                POLARIZED CAPACITOR, European symbol                                      
+C3      220nF         CAPACITOR-0603    0603-CAP                                                                                        
+C4      220nF         CAPACITOR-0603    0603-CAP                                                                                        
+C5      220nF         CAPACITOR-0603    0603-CAP                                                                                        
+C6      220nF         CAPACITOR-0603    0603-CAP                                                                                        
+C7      100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C8      100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C9      100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C10     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C11     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C12     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C13     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C14     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C15     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C16     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C17     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C18     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C19     22uF          CAPACITOR-0805    0805-CAP                                                                                        
+C20     22uF          CAPACITOR-0805    0805-CAP                                                                                        
+C21     33uF          CAPACITOR-POLB    3528/B                                                                                          
+C22     100uF         CPOL-EUE2-5       E2-5                  POLARIZED CAPACITOR, European symbol                                      
+C23     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C24     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C25     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C26     220nF         CAPACITOR-0603    0603-CAP                                                                                        
+C27     220nF         CAPACITOR-0603    0603-CAP                                                                                        
+C28     220nF         CAPACITOR-0603    0603-CAP                                                                                        
+C29     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C30     4.7uF         CAPACITOR-0603    0603-CAP                                                                                        
+C31     220nF         CAPACITOR-0603    0603-CAP                                                                                        
+C32     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C33     100nF         CAPACITOR-0603    0603-CAP                                                                                        
+C34     4.7uF         CAPACITOR-0603    0603-CAP                                                                                        
+D1      3V6           ZENER-DIODESOT23  SOT23                 Z-Diode                                                                   
+D2      DIODE-SMB     DIODE-B           3528/B-DIO                                                                                      
+D4      1N4004        DIODE-MELF        MELF-MLL41                                                                                      
+F1      FUSE          FUSE-1206         1206-FUSE                                                                                       
+H0                    LED-0603          0603-LED                                                                                        
+H1                    LED-0603          0603-LED                                                                                        
+H2                    LED-0603          0603-LED                                                                                        
+H3                    LED-0603          0603-LED                                                                                        
+H4                    LED-0603          0603-LED                                                                                        
+H5                    LED-0603          0603-LED                                                                                        
+IC1     ADUM1250      ADUM1250          SO8                   ADUM1250 - Hot Swappable, Dual I2C Isolators                              
+IC2     SN65HVD230    SN65HVD230        SO8                   SN65HVD230 - 3.3V CAN Transceiver                                         
+IC3     AD8544ARU     AD8544ARU         TSSOP14               AD8544 - General Purpose CMOS Quad Rail-to-Rail Amplifier                 
+IC4     AD8544ARU     AD8544ARU         TSSOP14               AD8544 - General Purpose CMOS Quad Rail-to-Rail Amplifier                 
+IC5     STM32-M-64    STM32-M-64        LQFP64                STM32F103 Medium Density 64pin LQFP                                       
+L2      100uH         INDUCTOR-0805     0805-IND                                                                                        
+L102    100uH         INDUCTOR-1210     1210-IND                                                                                        
+M1      MOUNT-HOLE3.2 MOUNT-HOLE3.2     3,2                   MOUNTING HOLE with drill center marker                                    
+M2      MOUNT-HOLE3.2 MOUNT-HOLE3.2     3,2                   MOUNTING HOLE with drill center marker                                    
+M3      MOUNT-HOLE3.2 MOUNT-HOLE3.2     3,2                   MOUNTING HOLE with drill center marker                                    
+M4      MOUNT-HOLE3.2 MOUNT-HOLE3.2     3,2                   MOUNTING HOLE with drill center marker                                    
+Q1                    ASE_OSCILLATOR    ASE_OSCILLATOR        Abracon ASE - 3.3V CMOS Crystal Clock Oscillator                          
+R1      22k           RESISTOR-0603     0603-RES                                                                                        
+R2      100R          RESISTOR-0603     0603-RES                                                                                        
+R3      22k           RESISTOR-0603     0603-RES                                                                                        
+R4      100R          RESISTOR-0603     0603-RES                                                                                        
+R5      100R          RESISTOR-0603     0603-RES                                                                                        
+R6      22k           RESISTOR-0603     0603-RES                                                                                        
+R7      100R          RESISTOR-0603     0603-RES                                                                                        
+R8      4.7k          RESISTOR-0603     0603-RES                                                                                        
+R9      22k           RESISTOR-0603     0603-RES                                                                                        
+R10     43k           RESISTOR-0603     0603-RES                                                                                        
+R11     4.7k          RESISTOR-0603     0603-RES                                                                                        
+R12     15k           RESISTOR-0603     0603-RES                                                                                        
+R13     15k           RESISTOR-0603     0603-RES                                                                                        
+R14     43k           RESISTOR-0603     0603-RES                                                                                        
+R15     100R          RESISTOR-0603     0603-RES                                                                                        
+R16     100R          RESISTOR-0603     0603-RES                                                                                        
+R17     4.7k          RESISTOR-0603     0603-RES                                                                                        
+R18     43k           RESISTOR-0603     0603-RES                                                                                        
+R19     100R          RESISTOR-0603     0603-RES                                                                                        
+R20     10k           RESISTOR-0603     0603-RES                                                                                        
+R21     120R          RESISTOR-0603     0603-RES                                                                                        
+R22     15k           RESISTOR-0603     0603-RES                                                                                        
+R23     3.3k          RESISTOR-0603     0603-RES                                                                                        
+R25     43k           RESISTOR-0603     0603-RES                                                                                        
+R26     120R          RESISTOR-0603     0603-RES                                                                                        
+R27     120R          RESISTOR-0603     0603-RES                                                                                        
+R28     120R          RESISTOR-0603     0603-RES                                                                                        
+R29     100R          RESISTOR-0603     0603-RES                                                                                        
+R30     4.7k          RESISTOR-0603     0603-RES                                                                                        
+R31     120R          RESISTOR-0603     0603-RES                                                                                        
+R32     3k3           RESISTOR-0603     0603-RES                                                                                        
+R33     100R          RESISTOR-0603     0603-RES                                                                                        
+R34     15k           RESISTOR-0603     0603-RES                                                                                        
+R35     120R          RESISTOR-0603     0603-RES                                                                                        
+R36     10k           RESISTOR-0603     0603-RES                                                                                        
+R37     4k7           RESISTOR-0603     0603-RES                                                                                        
+R38     4k7           RESISTOR-0603     0603-RES                                                                                        
+R39     120R          RESISTOR-0603     0603-RES                                                                                        
+S1                    COPAL_CVS-01B     COPAL_CVS-01B         Copal  CVS series - single dip switch                                     
+SJ1                   SJ2S              SJ2S                  SMD jumper - 3 terminals                                                  
+SJ2                   SJ2S              SJ2S                  SMD jumper - 3 terminals                                                  
+SJ4                   SJ2S              SJ2S                  SMD jumper - 3 terminals                                                  
+SJ5                   SJ2S              SJ2S                  SMD jumper - 3 terminals                                                  
+SJ6                   SJ2S              SJ2S                  SMD jumper - 3 terminals                                                  
+SJ7                   SJ2S              SJ2S                  SMD jumper - 3 terminals                                                  
+SV1     Extension     ML10L             ML10L                 HARTING                                                                   
+SV2                   MA02-1            MA02-1                Pin header -  2 leads                                                     
+SV3     JTAG          ML10              SMD_HEADER_1.27MM_2X5 Digikey: S9012E-05-ND                                                     
+T1      BC817-16SMD   BC817-16SMD       SOT23-BEC             NPN Transistor                                                            
+U$2     GND-AGND      GND-AGND          GND-AGND              Example of GND--GNDA NET-Connetor for more info see description in package
+U1      MLX90609-Z    MLX90609-BREAKOUT MLX90609-BREAKOUT     MLX90609 Breakout Board                                                   
+U3      MLX90609-Y    MLX90609-BREAKOUT MLX90609-BREAKOUT     MLX90609 Breakout Board                                                   
+U4      MLX90609-X    MLX90609-BREAKOUT MLX90609-BREAKOUT     MLX90609 Breakout Board                                                   
+U5      MXR9500       MXR9500           MXR9500-LCC16         Memsic MXR9500 - Tri Axis Accelerometer                                   
+U6      LM3940IMP     LM3940IMP         SOT223                National LM3940 - Linear Regulator                                        
+U7      R-785.0-0.5   R-78XX            R-78XX                Recom R78xx - Switching Regulator                                         
+U8      HMC5843       HMC5843           LPCC20-HMC5843        Honeywell HMC5843 - 3-Axis Digital Magnetometer                           
+U9                    BMP085            LCC8                  BMP085 - Digital pressure sensor                                          
+X1      GPS_USART     CONN_4-1-53261    PB-53261-04                                                                                     
+X2      Servo 1       CONN_3-1-53047    PB-53047-03                                                                                     
+X3      Servo 2       CONN_3-1-53047    PB-53047-03                                                                                     
+X5      PC-USART      CONN_4-1-53261    PB-53261-04                                                                                     
+X6      DSL_USART     CONN_4-1-53261    PB-53261-04                                                                                     
+X9      BLDC          CONN_3-1-53261    PB-53261-03                                                                                     
+\end{document}
+
+
