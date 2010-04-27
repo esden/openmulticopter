@@ -14,16 +14,23 @@
 \usepackage[utf8]{inputenc}
 
 % Header / Footer
+\usepackage{lastpage}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
+% Clean all default header/footer
+\fancyhf{}
 \headheight 25pt
 
-\lhead{openmulticopter - mini}
-\chead{}
-\rhead{hardware}
-\lfoot{openmulticopter.org}
-\cfoot{ }
-\rfoot{Page \thepage}
+% Header
+\fancyhead[L]{openmulticopter - mini}
+\fancyhead[C]{hardware}
+\fancyhead[R]{\leftmark}
+
+% Footer
+\fancyfoot[L]{\today}
+\fancyfoot[C]{openmulticopter.org}
+\fancyfoot[R]{Page \thepage\ / \pageref{LastPage}}
+
 
 % Document information
 \title{openmulticopter mini - hardware v0.1}
@@ -48,6 +55,9 @@
 % Graphics support
 \usepackage{graphics}
 
+% No indentation
+\setlength{\parindent}{0in}
+
 % This is now the recommended way for checking for PDFLaTeX:
 \usepackage{ifpdf}
 
@@ -64,16 +74,95 @@
 \maketitle
 
 \begin{abstract}
-Abstract
+This document describes the different hardware parts/units from the openmulticopter-mini version.
+It covers mostly calculations and technical aspects of this project.
 \end{abstract}
 
 \newpage
 
 \tableofcontents
+\newpage
 
 \section{Summary} % (fold)
 \label{sec:Summary}
-The mini version of the openmulticopter is a first version of our project. It’s only for boot strapping our work and for testing/development purposes. As simple as possible. And of course, as small as possible.
+The mini version of the openmulticopter is a first version of our project. It’s only for boot strapping 
+our work and for testing/development purposes. As simple as possible. And of course, as small as possible.
 % section Summary (end)
+
+\section{Design Ideas} % (fold)
+\label{sec:Design Ideas}
+
+% section Design Ideas (end)
+
+\section{Selected main-parts} % (fold)
+\label{sec:Selected Main-Parts}
+
+% section Selected Main-Parts (end)
+
+% = = = = = = Circuitry
+\section{Circuitry description} % (fold)
+\label{sec:Circuitry description}
+
+\subsection{Power Supply} % (fold)
+\label{sub:Power Supply}
+
+% sub Power Supply (end)
+
+\subsection{I2C level shifter} % (fold)
+\label{sub:I2C level shifter}
+
+% sub I2C level shifter (end)
+
+\subsection{CAN interface} % (fold)
+\label{sub:CAN interface}
+
+% sub CAN interface (end)
+
+\subsection{Accelerometer} % (fold)
+\label{sub:Accelerometer}
+
+% sub Accelerometer (end)
+
+\subsection{Gyroscopes} % (fold)
+\label{sub:Gyroscopes}
+
+% subsection Gyroscopes (end)
+
+\subsection{STM32} % (fold)
+\label{sub:STM32}
+
+% sub STM32 (end)
+% section Circuitry description (end)
+
+% = = = = = = Connectors
+\section{Connectors} % (fold)
+\label{sec:Connectors}
+
+\subsection{Extension board} % (fold)
+\label{sub:Extension board}
+
+% sub Extension board (end)
+
+\subsection{RC-receiver} % (fold)
+\label{sub:RC-receiver}
+
+% sub RC-receiver (end)
+
+\subsection{USART interface} % (fold)
+\label{sub:USART interface}
+
+% sub USART interface (end)
+
+\subsection{Motor controllers} % (fold)
+\label{sub:Motor controllers}
+
+% sub Motor controllers (end)
+
+\subsection{JTAG interface} % (fold)
+\label{sub:JTAG interface}
+
+% sub JTAG interface (end)
+% section Connectors (end)
+
 \end{document}
 
