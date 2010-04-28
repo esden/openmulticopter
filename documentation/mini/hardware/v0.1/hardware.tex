@@ -48,6 +48,7 @@
 
 % Color package
 \usepackage{color}
+\usepackage[table]{xcolor}
 
 % Math package
 \usepackage{amsmath}
@@ -91,11 +92,73 @@ our work and for testing/development purposes. As simple as possible. And of cou
 
 \section{Design Ideas} % (fold)
 \label{sec:Design Ideas}
+\begin{itemize}
+  \item Use the internal ADC of the STM32 for sensor inputs
+  \item JTAG programming interface exposed
+  \item I2C/CAN interface exposed for motor controller interfacing
+  \item PPM input for sum signal receivers
+  \item UART interface for DSL receivers (RCOPEN24 support?)
+  \item UART interface exposed for PC/RF modem interface
+  \item Some LEDs for status indication
+  \item AUX connector containing as many of the remaining pins of the STM32 as possible and some of 
+    the already exposed pins (for further tests and expansions) 
+  \item \dots
+\end{itemize}
 
 % section Design Ideas (end)
 
 \section{Selected main-parts} % (fold)
 \label{sec:Selected Main-Parts}
+
+\begin{center}\footnotesize
+  \definecolor{light-gray}{gray}{0.95}
+  \definecolor{normal-gray}{gray}{0.85}
+  \rowcolors{2}{light-gray}{normal-gray}
+
+  \begin{tabular}{ | l | p{6.5cm} | l | l |}
+    \hline Part & Description & Name & Footprint \\ \hline
+    Controller & 
+    High-density Performance line, ARM-based 32-bit MCU with up to 512 KB Flash, USB, CAN, 
+    11 timers, 3 ADCs, 13 communication interfaces & 
+    ST STM32F104RE & 
+    TQFP64 \\ \hline
+
+    Gyros x, y, z (melexis) & 
+    Factory set full scale range: ±75 °/s, ±150 °/s or ±300 °/s. 5V supply
+    voltage. Analog / digital interface. Output not supply-ratiometric. &
+    MLX90609 &
+    CQFN32 \\ \hline
+
+    Gyros x, y, z (analog devices) &
+    High vibration rejection over wide frequency. Ratiometric to referenced supply. 5V single-supply
+    operation &
+    ADXRS610 &
+    BG-32-3 \\ \hline
+
+    Accelerometer &
+    3-Axis +/- 1.5g accelerometer, single-supply operation: 2.7-3.6V, ratiometric ouptuts &
+    MXR9500 &
+    LCC16 \\ \hline
+
+    I2C level-shifter &
+    Hot swappable dual I2C isolators, bidirectional I2C communication, 1000 kHz operation, 3.0V to
+    5.5V supply/logic levels &
+    ADUM1250 &
+    SOIC-8 \\ \hline
+
+    CAN transceiver &
+    High-speed CAN transceiver, supports 1Mb/s operation, suitable for 12V and 24V systems,
+    detection of ground fault (permanent dominant) on TXD input &
+    MCP2551 &
+    SOIC-8 \\ \hline
+
+    Switchting regulator &
+    Recom 78xx series. 5V output &
+    &
+    78xx \\ \hline
+  \end{tabular}
+\end{center}
+
 
 % section Selected Main-Parts (end)
 
